@@ -14,7 +14,7 @@ permissions: {}
 jobs:
   build:
     name: Build
-    uses: rbrownwsws/apko-workflows/.github/workflows/build.yaml@9d5679acbb8dbf79bdbda176f87c64911bedca1e # master
+    uses: rbrownwsws/apko-workflows/.github/workflows/build.yaml@289910a074fd70c53a45dc42b0695f928658632d # master
     with:
       image-name: gghait
       image-tag: latest
