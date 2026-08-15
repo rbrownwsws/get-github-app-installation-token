@@ -18,3 +18,5 @@ jobs:
     with:
       image-name: gghait
       image-tag: latest
+    permissions:
+      contents: read
