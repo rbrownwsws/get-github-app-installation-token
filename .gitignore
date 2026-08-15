@@ -1,0 +1,9 @@
+# SBOMs
+*.spdx.json
+
+# Local builds
+*.tar
+/dist/
+
+# IDE junk
+.idea

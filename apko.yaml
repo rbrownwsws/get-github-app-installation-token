@@ -1,0 +1,39 @@
+# $schema: https://raw.githubusercontent.com/chainguard-dev/apko/main/pkg/build/types/schema.json
+
+contents:
+  keyring:
+    - https://packages.wolfi.dev/os/wolfi-signing.rsa.pub
+    - https://rbrownwsws.github.io/wolfi-gh-app-auth/rbrownwsws.github.io-wolfi-gh-app-auth.rsa.pub
+  repositories:
+    - https://packages.wolfi.dev/os
+    - "@app https://rbrownwsws.github.io/wolfi-gh-app-auth"
+  packages:
+    - wolfi-baselayout
+    - ca-certificates-bundle
+    - gh-app-auth@app
+
+annotations:
+  org.opencontainers.image.title: "get-github-app-installation-token"
+  org.opencontainers.image.description: "Get a GitHub App Installation Token"
+  org.opencontainers.image.licenses: "Apache-2.0"
+
+entrypoint:
+  command: /usr/bin/gh-app-auth
+
+cmd: create-installation-access-token
+
+accounts:
+  groups:
+    - groupname: nonroot
+      gid: 65532
+  users:
+    - username: nonroot
+      uid: 65532
+      gid: 65532
+      shell: /sbin/nologin
+  run-as: nonroot
+
+archs:
+  - amd64
+  - arm64
+
