@@ -1,0 +1,22 @@
+# $schema: https://json.schemastore.org/github-workflow.json
+
+name: Release
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+permissions: {}
+
+jobs:
+  build:
+    name: Release
+    uses: rbrownwsws/apko-workflows/.github/workflows/release.yaml@9f1faa31f756c00ddc47fbf9d9f865b73fdbbcff # master
+    permissions:
+      contents: read            # to read the source needed to build the image
+      id-token: write           # to get ID needed to sign attestations
+      packages: write           # to store attestations
+      attestations: write       # to store attestations
+      artifact-metadata: write  # to store attestations
