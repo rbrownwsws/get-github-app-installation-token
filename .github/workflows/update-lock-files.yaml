@@ -1,0 +1,21 @@
+# $schema: https://json.schemastore.org/github-workflow.json
+
+name: Update lock files
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+permissions: {}
+
+jobs:
+  update:
+    name: Update lock files
+    uses: rbrownwsws/apko-workflows/.github/workflows/update-lock-file.yaml@d85532ca2145ce22b31b9be5b64d97b6913edc81 # master
+    permissions:
+      contents: write  # to read/write the lock file
+    with:
+      updater-app-client-id: ${{ vars.APP_CLIENT_ID }}
+    secrets:
+      updater-app-private-key: ${{ secrets.APP_PRIVATE_KEY }}
