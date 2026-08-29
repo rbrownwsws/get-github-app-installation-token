@@ -158,22 +158,22 @@
       },
       {
         "name": "gh-app-auth",
-        "url": "https://rbrownwsws.github.io/wolfi-gh-app-auth/x86_64/gh-app-auth-0.2.0-r1.apk",
-        "version": "0.2.0-r1",
+        "url": "https://rbrownwsws.github.io/wolfi-gh-app-auth/x86_64/gh-app-auth-0.2.0-r2.apk",
+        "version": "0.2.0-r2",
         "architecture": "x86_64",
         "signature": {
-          "range": "bytes=0-677",
-          "checksum": "sha1-FuC0Fosir6q1lUu6GizzNrQT5uo="
+          "range": "bytes=0-674",
+          "checksum": "sha1-SSHo98jiSVI/a9ahWcd2KQl+w+w="
         },
         "control": {
-          "range": "bytes=678-5650",
-          "checksum": "sha1-Y2isB+Gc6YMKAtdXBhDl0tA1TBk="
+          "range": "bytes=675-5651",
+          "checksum": "sha1-3qD3OZvlbr349cvZWsuIYy48B5s="
         },
         "data": {
-          "range": "bytes=5651-3874761",
-          "checksum": "sha256-IYxBIqIaBWAWXEzBKiVGyTe2Y7+thM853e4Gll7UIEs="
+          "range": "bytes=5652-3874766",
+          "checksum": "sha256-COhJKuPhg9uRxD7eGYzR0gzb6Ut1+QlZ59xcX/fkPlE="
         },
-        "checksum": "Q1Y2isB+Gc6YMKAtdXBhDl0tA1TBk="
+        "checksum": "Q13qD3OZvlbr349cvZWsuIYy48B5s="
       },
       {
         "name": "wolfi-baselayout",
@@ -291,22 +291,22 @@
       },
       {
         "name": "gh-app-auth",
-        "url": "https://rbrownwsws.github.io/wolfi-gh-app-auth/aarch64/gh-app-auth-0.2.0-r1.apk",
-        "version": "0.2.0-r1",
+        "url": "https://rbrownwsws.github.io/wolfi-gh-app-auth/aarch64/gh-app-auth-0.2.0-r2.apk",
+        "version": "0.2.0-r2",
         "architecture": "aarch64",
         "signature": {
-          "range": "bytes=0-677",
-          "checksum": "sha1-CtzzYuBw4moVUyDvkb0fe4GyaHg="
+          "range": "bytes=0-678",
+          "checksum": "sha1-rQ9MhzBVnTZ+rvgUtDrfBXgeK9o="
         },
         "control": {
-          "range": "bytes=678-5646",
-          "checksum": "sha1-aWNyScw26a5TurrtJC+cO86wFQo="
+          "range": "bytes=679-5652",
+          "checksum": "sha1-TXssNvDVAiN5WwhW5QkjOC7AqUU="
         },
         "data": {
-          "range": "bytes=5647-3644763",
-          "checksum": "sha256-i+c62+TUC+aHfH3MZ0BdyYhFoW7YzfVxCka2exR0pHY="
+          "range": "bytes=5653-3644820",
+          "checksum": "sha256-TALgaEIw+XaQIDt4IOsiyE58/M+JNn5XxAj8ftfyLRc="
         },
-        "checksum": "Q1aWNyScw26a5TurrtJC+cO86wFQo="
+        "checksum": "Q1TXssNvDVAiN5WwhW5QkjOC7AqUU="
       }
     ]
   }
